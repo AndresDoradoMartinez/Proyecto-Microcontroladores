@@ -1,0 +1,10 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity output_ports is port(
+	address	:	in std_logic_vector(7 downto 0);
+	data_in	:	in std_logic_vector(7 downto 0);
+	clock,write, reset		:	in std_logic;
+	port_out_xx	:	out std_logic_vector(7 downto 0));
+end entity;
